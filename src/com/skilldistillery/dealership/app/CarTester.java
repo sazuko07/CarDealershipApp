@@ -1,5 +1,5 @@
 package com.skilldistillery.dealership.app;
-
+import com.skilldistillery.dealership.entity.*;
 public class CarTester {
 
   public static void main(String[] args) {
