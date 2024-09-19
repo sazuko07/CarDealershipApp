@@ -11,7 +11,7 @@ public class CarLot {
 	Car bernicesCar = new Car("make", "model", "color", 32199); 
 	// the above created 2 distinct Car objects on the heap
 	// now you can park both distinct cars in the carlot
-	CarLot Lot = new CarLot();
+	
 	 
 		
 	
