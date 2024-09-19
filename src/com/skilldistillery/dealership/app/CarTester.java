@@ -1,10 +1,12 @@
 package com.skilldistillery.dealership.app;
+
 import com.skilldistillery.dealership.entity.*;
+
 public class CarTester {
 
   public static void main(String[] args) {
-	  
-    // Create two Cars and assign fields
+	// Create two Cars and assign fields  
+  
     Car fredsCar = new Car();
     fredsCar.setMake("Kia");
     fredsCar.setModel("Sportage");
@@ -31,6 +33,15 @@ public class CarTester {
     // Get the cars' data and display that
     System.out.println("Fred car data: " + fredCarData);
     System.out.println("Bernices Car data: " + bernicesCarData);
+  }
+    //methods to pass fred/bernice car information to CarLot
+  	public Car fredCarTester(Car fredsCar) {
+    	Car output = fredsCar;
+    	return output; 
+    }
+    public Car berniceCarTester(Car bernicesCar) {
+    	Car output = bernicesCar; 
+    	return output; 
   }
 
 }
