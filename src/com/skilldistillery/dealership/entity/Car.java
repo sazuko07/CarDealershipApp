@@ -5,13 +5,14 @@ public class Car {
 	private String model;
 	private String color;
 	private double purchasePrice;
-	private String getCarInfo;
+	
+	
 
    
 	//display method for car
-	public void displayCar() {
-      String carData = getCarInfo;
-      System.out.println(carData);
+	 public void displayCar() {
+	      String carData = getCarInfo();
+	      System.out.println(carData);
    }
 	//car constructor with the 4 variables
    public Car(String make, String model, String color, double purchasePrice) {
@@ -23,13 +24,14 @@ public class Car {
    	
    //toString replacement with similar format (reads like a list, instead of just left to right)
    public String getCarInfo() {
+	   
 	   System.out.println("Here are the specs for the car: ");
 	   System.out.println("make: " +make);
 	   System.out.println("model: " +model);
 	   System.out.println("color: " +color);
 	   System.out.println("purchase price: " +purchasePrice);
 	  
-	   return getCarInfo;
+	   return" ";
    }
    
    //an example of a car (to set default values)
