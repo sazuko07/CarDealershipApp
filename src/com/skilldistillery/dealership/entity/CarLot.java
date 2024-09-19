@@ -7,14 +7,19 @@ public class CarLot {
 	private int addCar = 2;
 	private int currentInventory = addCar;
 	 
-	
+	Car fredsCar = new Car("make", "model", "color", 28565);
+	Car bernicesCar = new Car("make", "model", "color", 32199); 
+	// the above created 2 distinct Car objects on the heap
+	// now you can park both distinct cars in the carlot
+	CarLot Lot = new CarLot();
+	 
 		
 	
 		
 	Car[] carsInLot = new Car [LOT_SIZE]; {
-		carsInLot[0] = fredCarTester; 
-		carsInLot[1] = berniceCarTester;
-	
+		carsInLot[0] = fredsCar; 
+		carsInLot[1] = bernicesCar;
+	}
 	
 	public String Carlot() {
 		System.out.println("This is Doogie's car lot");
