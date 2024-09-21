@@ -3,11 +3,26 @@ package com.skilldistillery.dealership.app;
 import com.skilldistillery.dealership.entity.*;
 
 public class CarTester {
-
+	
   public static void main(String[] args) {
-	// Create two Cars and assign fields  
+	// Create Cars and assign fields 
+	Car emptySpace = new Car();
+	emptySpace.setOwner("N/A");
+	emptySpace.setMake("N/A");
+	emptySpace.setModel("N/A");
+	emptySpace.setModel("N/A");
+	emptySpace.setPurchasePrice(0);
+			
+	Car joeBobsCar = new Car();
+	joeBobsCar.setOwner("Joe Bob");
+	joeBobsCar.setMake("Ford");
+	joeBobsCar.setModel("Explorer - Platinum");
+	joeBobsCar.setColor("White");
+	joeBobsCar.setPurchasePrice(59997.99);
+	System.out.println();
   
     Car fredsCar = new Car();
+    fredsCar.setOwner("Fred");
     fredsCar.setMake("Kia");
     fredsCar.setModel("Sportage");
     fredsCar.setColor("Hot Pink");
@@ -15,7 +30,7 @@ public class CarTester {
     System.out.println();
 
     Car bernicesCar = new Car();
-
+    bernicesCar.setOwner("Bernice");
     bernicesCar.setMake("Toyota");
     bernicesCar.setModel("Prius");
     bernicesCar.setColor("Neon");
@@ -25,23 +40,10 @@ public class CarTester {
     // Have the cars display themselves
     fredsCar.displayCar();
     bernicesCar.displayCar();
+    joeBobsCar.displayCar();
     System.out.println();
 
-    String fredCarData = fredsCar.getCarInfo();
-    String bernicesCarData = bernicesCar.getCarInfo();
 
-    // Get the cars' data and display that
-    System.out.println("Fred car data: " + fredCarData);
-    System.out.println("Bernices Car data: " + bernicesCarData);
-  }
-    //methods to pass fred/bernice car information to CarLot
-  	public Car fredCarTester(Car fredsCar) {
-    	Car output = fredsCar;
-    	return output; 
-    }
-    public Car berniceCarTester(Car bernicesCar) {
-    	Car output = bernicesCar; 
-    	return output; 
-  }
 
+}
 }
